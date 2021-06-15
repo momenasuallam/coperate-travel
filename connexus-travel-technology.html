@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connexus Travel Technology</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/fa-all.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body class="bodyst">
+    <header>
+      <img class="headerbg disnonheaderbgdesk" src="./img/Index_banner.png" />
+      <img
+        class="headerbg disnonheaderbgmbl"
+        src="./img/Index_banner_Fullsize.jpg"
+      />
+      <!-- site-navbar start -->
+      <div class="navbar-area">
+        <div class="narcontainer">
+          <nav class="site-navbar">
+            <!-- site logo -->
+            <a href="./index.html"><img src="./img/CTL_LOGO.svg" /></a>
+
+            <!-- site menu/nav -->
+            <ul>
+              <li><a href="./index.html">Corporate TraveL</a></li>
+              <li>
+                <a href="./connexus-travel-technology.html"
+                  >Connexus Travel Technology</a
+                >
+              </li>
+              <li><a href="./travel-solutions.html">Travel Solutions</a></li>
+              <li>
+                <a href="./our-partners-and-affiliates.html"
+                  >Our Partners & Affiliates</a
+                >
+              </li>
+              <li><a href="./index.html">Homepage</a></li>
+            </ul>
+
+            <!-- nav-toggler for mobile version only -->
+            <button class="nav-toggler">
+              <span></span>
+            </button>
+          </nav>
+        </div>
+      </div>
+      <!-- navbar-area end -->
+
+      <div class="headertxt">
+        <img src="./img/Header_Dot_147x135.svg" />
+        <h2 class="disnonheaderbgdesk">
+          Your One-Stop Corporate Travel Solutions
+        </h2>
+        <h2 class="disnonheaderbgmbl">Become a corporate client</h2>
+      </div>
+      <div class="headerbottom disnonheaderbgmbl">
+        <a href="#introsection">
+          <i class="fa fa-angle-down"></i>
+          <p>explore</p>
+        </a>
+      </div>
+    </header>
+
+   
+
+    <section class="learnmoresec">
+      <!-- <img src="./img/Learn_More.png" /> -->
+      <div class="learnmorebg">
+        <div class="container">
+          <div class="flexdivlearnmo">
+            <div class="copoform">
+              <form>
+                <h2>Become a corporate client</h2>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label>First Name</label>
+                    <input type="text" required />
+                  </div>
+                  <div class="col-md-6">
+                    <label>Last Name</label>
+                    <input type="text" required />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label>Company Name</label>
+                    <input type="text" required />
+                  </div>
+                  <div class="col-md-6">
+                    <label>Job Title</label>
+                    <input type="text" required />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label>Company Location</label>
+                    <input type="text" required />
+                  </div>
+                  <div class="col-md-6">
+                    <label>Contact Phone</label>
+                    <input type="text" required />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <label>Contact Email</label>
+                    <input type="email" required />
+                  </div>
+                </div>
+                <div class="submitbtn">
+                  <button type="submit" class="hvr-sweep-to-right">
+                    Send Now &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="fa fa-angle-right"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="leranmotxt">
+              <h2>LEARN MORE ABOUT OUR TRAVEL MANAGMENT OFFERING</h2>
+              <p>
+                To reach out to clients to learn more and receive communications
+                on our products and services. Please complete our form.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footerp1">
+      <div class="container">
+        <div class="footertop">
+          <p class="disdeskfooter">
+            Becoming our corporate client Tel : (852) 2579 6688 Email :
+            general@connexustravel.com
+          </p>
+          <p class="dismmfooter">Becoming our corporate client</p>
+          <div class="dismmfooter2">
+            <h2>Tel : (852) 2579 6688</h2>
+            <h2>Email : general@connexustravel.com</h2>
+          </div>
+        </div>
+        <div class="footermenu">
+          <a href="./connexus-travel-technology.html"
+            >Connexus Travel Technology</a
+          >
+          <a href="./travel-solutions.html">Travel Solutions</a>
+          <a href="./our-partners-and-affiliates.html"
+            >Our Partners & Affiliates</a
+          >
+          <a href="./index.html">Homepage</a>
+        </div>
+        <div class="footerbottom">
+          <p>
+            Copyright ©2020 Connexus Travel Limited 全旅達國際旅遊有限公司
+            Licence No:350001
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/popper.min.js"></script>
+
+       <script>
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 1) {
+          $("header").addClass("sticky");
+          
+           $(".narcontainer").css("background-color", "#293D7C");
+         
+        } else {
+           $(".narcontainer").css("background-color", "unset");
+
+         
+          $("header").removeClass("sticky");
+        
+        }
+      });
+    </script>
+
+    <script>
+
+      // define all UI variable
+      const navToggler = document.querySelector(".nav-toggler");
+      const navMenu = document.querySelector(".site-navbar ul");
+      const navLinks = document.querySelectorAll(".site-navbar a");
+
+      // load all event listners
+      allEventListners();
+
+      // functions of all event listners
+      function allEventListners() {
+        // toggler icon click event
+        navToggler.addEventListener("click", togglerClick);
+        // nav links click event
+        navLinks.forEach((elem) =>
+          elem.addEventListener("click", navLinkClick)
+        );
+      }
+
+      // togglerClick function
+      function togglerClick() {
+        navToggler.classList.toggle("toggler-open");
+        navMenu.classList.toggle("open");
+         if ($(".nav-toggler").hasClass("toggler-open")) {
+           $(".narcontainer").css("background-color", "#293D7C");
+          
+          $(".bodyst").css("overflow", "hidden");
+        }
+        else{
+           $(".narcontainer").css("background-color", "unset");
+          $(".bodyst").css("overflow-y", "scroll");
+        }
+      
+        
+      }
+
+      // navLinkClick function
+      function navLinkClick() {
+        if (navMenu.classList.contains("open")) {
+          navToggler.click();
+          //  $(".narcontainer").css("background-color", "#293D7C");
+          // $(".bodyst").css("overflow", "hidden");
+        }
+
+         if ($(".nav-toggler").hasClass("toggler-open")) {
+            alert("yes");
+           $(".narcontainer").css("background-color", "#293D7C");
+          $(".bodyst").css("overflow", "hidden");
+        }
+          
+      }
+
+      
+
+   
+      
+
+     
+
+      $(".contrvlsol").css("display", "none");
+      $(".contrvlpart").css("display", "none");
+       $(".contrvltechtab").css("color", "#112F64");
+      $(".contrvltechtab").click(function () {
+        $(".contrvltech").css("display", "block");
+        $(".contrvlsol").css("display", "none");
+        $(".contrvlpart").css("display", "none");
+         $(".contrvltechtab").css("color", "#112F64");
+           $(".contrvlsoltab").css("color", "#565656");
+             $(".contrvlparttab").css("color", "#565656");
+      });
+      $(".contrvlsoltab").click(function () {
+        $(".contrvltech").css("display", "none");
+        $(".contrvlsol").css("display", "block");
+        $(".contrvlpart").css("display", "none");
+         $(".contrvlsoltab").css("color", "#112F64");
+           $(".contrvltechtab").css("color", "#565656");
+             $(".contrvlparttab").css("color", "#565656");
+      });
+      $(".contrvlparttab").click(function () {
+        $(".contrvltech").css("display", "none");
+        $(".contrvlsol").css("display", "none");
+        $(".contrvlpart").css("display", "block");
+         $(".contrvlparttab").css("color", "#112F64");
+           $(".contrvlsoltab").css("color", "#565656");
+             $(".contrvltechtab").css("color", "#565656");
+      });
+
+      $(".contrvlsolmbl").css("display", "none");
+      $(".contrvlpartmbl").css("display", "none");
+      $(".tab01mbl1").click(function () {
+        $(".contrvltechmbl").css("display", "block");
+        $(".contrvlsolmbl").css("display", "none");
+        $(".contrvlpartmbl").css("display", "none");
+      });
+      $(".tab02mbl1").click(function () {
+        $(".contrvltechmbl").css("display", "none");
+        $(".contrvlsolmbl").css("display", "block");
+        $(".contrvlpartmbl").css("display", "none");
+      });
+      $(".tab03mbl1").click(function () {
+        $(".contrvltechmbl").css("display", "none");
+        $(".contrvlsolmbl").css("display", "none");
+        $(".contrvlpartmbl").css("display", "block");
+      });
+
+      $(".hotitab2").css("display", "none");
+      $(".hotitab3").css("display", "none");
+      $(".hoticlicktab1").click(function () {
+        $(".hotitab1").css("display", "block");
+        $(".hotitab2").css("display", "none");
+        $(".hotitab3").css("display", "none");
+      });
+      $(".hoticlicktab2").click(function () {
+        $(".hotitab1").css("display", "none");
+        $(".hotitab2").css("display", "block");
+        $(".hotitab3").css("display", "none");
+      });
+      $(".hoticlicktab3").click(function () {
+        $(".hotitab1").css("display", "none");
+        $(".hotitab2").css("display", "none");
+        $(".hotitab3").css("display", "block");
+      });
+    </script>
+  </body>
+</html>
