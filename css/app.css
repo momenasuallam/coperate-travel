@@ -933,7 +933,7 @@ font-size: 20px !important;
   z-index: 9999999999; */
 }
 .narcontainer{
-  padding: 25px 30px;
+  padding: 18px 30px;
 }
 .site-navbar {
   display: flex;
@@ -1066,9 +1066,9 @@ button:focus {
   .site-navbar ul {
     position: absolute;
     width: 100%;
-    height: calc(100vh - 110px);
+    height: calc(100vh - 76px);
     left: 0;
-    top: 110px;
+    top: 76px;
     flex-direction: column;
     align-items: center;
     /* border-top: 0px solid #444; */
@@ -1101,6 +1101,7 @@ button:focus {
 
 .headimgdiv{
       padding: 1rem 4rem 2rem;
+      position: relative;
 }
 .headimgdiv img{
   width: 100%;
@@ -1112,7 +1113,7 @@ button:focus {
     align-items: center;
     position: absolute;
     top: 50%;
-    transform: translateY(-100%);
+    transform: translateY(-50%);
     margin-left: 3rem;
 }
 
@@ -1214,7 +1215,12 @@ bottom: 20px;
 bottom: 10px;
   }
 }
-
+@media(max-width: 1450px)
+{
+  .headimgdiv{
+    padding: 1rem 2rem;
+  }
+}
 @media(max-width:965px)
 {
   .dnbannerdesk{
@@ -1269,15 +1275,15 @@ font-size: 18px;
   
 }
 .techtxtcontain{
-padding: 2rem 20px;
+padding: 1rem 20px;
 }
 .techtxtcontain .row {
     margin-bottom: 2rem;
 }
 
 .headerp2txt {
-  
-    transform: translateY(0%);
+  /* top: 40%;
+    transform: translateY(0%); */
         flex-direction: column;
     align-items: baseline;
 
@@ -1297,4 +1303,247 @@ padding: 2rem 20px;
     color: #fff;
     width: 265px;
 }
+}
+
+.travelsolmain{
+padding: 2rem 0px 4rem;
+}
+.trsoldiv{
+padding: 1rem 10% 1rem 0;
+position: relative;
+}
+.trsoldiv img {
+width: 100%;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+.trsolboxtxt {
+background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 10px 15px 19px #00000029;
+    padding: 4rem 2rem 5rem;
+    position: absolute;
+    top: 15%;
+    width: 45%;
+    right: 4%;
+}
+.trsolboxtxt hr{
+ background-color: #202B5C;
+    height: 1px;
+    width: 2.5vw;
+    margin: 0 0 15px;
+}
+.trsolboxtxt h2{
+ font-family: "barlow-bold";
+    font-size: 1.4vw;
+    text-transform: uppercase;
+    color: #202B5C;
+    margin-bottom: 1rem;
+}
+.trsolboxtxt p{
+ font-family: "barlow-med";
+    font-size: 1vw;
+    color: #000;
+}
+.trsolboxtxt a{
+position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 14px 15px;
+}
+
+
+
+.trasoldiv2{
+  padding: 1rem 0px 1rem 10% !important;
+}
+.trsolboxtxleft{
+  left: 4% !important;
+  top: 8% !important;
+}
+.btnleftbox{
+  left: 0 !important;
+    right: auto !important ;
+}
+.trsolboxtxleft2{
+top: 5% !important;
+left: 4% !important;
+}
+
+.wantlearnmorebg {
+  background-image: url("../img/Learn_More_2.png");
+  background-color: #fff;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 4rem;
+}
+.wantlmodiv{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+.wantlmodiv h2{
+ font-family: "barlow-bold";
+    font-size: 1.5vw;
+    color: #fff;
+}
+.wantlmodiv p{
+ font-family: "barlow-reg";
+    font-size: 1.2vw;
+    color: #fff;
+}
+.wantlmodiv form{
+
+}
+.downform{
+border: 2px solid #FFFFFF;
+border-radius: 6px;
+display: flex;
+padding: 6px;
+margin: 1rem 10%;
+}
+.downform input {
+border: 0px solid !important;
+background-color: unset !important;
+color: #fff;
+width: 100%;
+    margin-right: 10px;
+}
+.downform input::placeholder {
+  color: #F3F4FB;
+}
+.downform button{
+background-color: #fff;
+color: #202F60;
+border: 0px solid !important;
+border-radius: 6px;
+padding: 6px 18px;
+}
+
+@media(max-width: 1400px)
+{
+  
+  .trsolboxtxt {
+   padding: 2rem 2rem 3rem;
+   top: 12%;
+}
+.trsolboxtxt a{
+font-size: 13px;
+}
+.wantlmodiv {
+    width: 55%;
+    margin: auto;
+    text-align: center;
+}
+.wantlmodiv h2 {
+    font-size: 26px;
+}
+.wantlmodiv p {
+    font-size: 16px;
+}
+.downform input {
+    font-size: 14px;
+}
+}
+
+@media(max-width: 950px)
+{
+  .trsoldiv {
+    padding: 1rem 1rem !important;
+}
+.trsolboxtxt hr {
+ 
+    width: 40px;
+}
+.trsolboxtxt {
+    background: unset;
+    box-shadow: unset;
+    padding: 2rem 3rem !important;
+    position: unset;
+    width: 100%;
+}
+.trsolboxtxt a {
+    position: unset;
+    padding: 14px 15px;
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+}
+.trsolboxtxt a .fa {
+    position: absolute;
+    right: 28px;
+    top: 18px;
+}
+.trsolboxtxt h2 {
+    font-size: 18px;
+}
+.trsolboxtxt p {
+    font-size: 15px;
+}
+.trasoldiv2 {
+    padding: unset;
+}
+.wantlmodiv {
+    width: 95%;
+}
+.narcontainer {
+    padding: 8px 15px;
+}
+
+
+}
+
+@media(max-width: 1550px)
+{
+  .headerp2txt {
+/* 
+    top: 37%; */
+  
+}
+}
+
+@media(max-width: 600px)
+{
+  .headerp2txt img {
+    width: 45px !important;
+    margin-bottom: 10px;
+}
+.headerp2txt {
+    /* top: 14%; */
+     margin-left: 1rem;
+
+}
+
+}
+
+.breadcrumbsec{
+  display: none;
+}
+@media(max-width: 950px)
+{
+  .travelsolmain{
+    padding-top: 0px;
+  }
+  .breadcrumbsec{
+     padding: 1rem 0 0;
+     display: block;
+     text-align: right;
+  }
+  .breadcrumbsec span{
+color: #6F7070;
+ font-family: "barlow-reg";
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-right: 10px;
+  }
+  .breadcrumbsec span:last-child{
+    color: #202B5C !important;
+
+  }
+  .breadcrumbsec .fa{
+color: #6F7070 !important;
+margin-right: 10px;
+
+  }
+
 }
