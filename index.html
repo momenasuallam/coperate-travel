@@ -12,6 +12,21 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
+    <style>
+    
+      @media(max-width: 950px)
+      {
+        .narcontainer{
+          position: relative;
+          width: 100%;
+        }
+          .nav-toggler{
+        position: absolute;
+        right: 25px;
+      }
+      }
+    </style>
   </head>
   <body class="bodyst">
     <header>
@@ -244,7 +259,7 @@
         </div>
 
         <div class="maindivsec2p1 contrvltech">
-          <img src="./img/Connexus_Travel_Technology.jpg" />
+          <img src="./img/Connexus_Travel_Technology.jpg" class="imgp1abc" />
           <a href="#" class="hvr-sweep-to-right"
             >Read More &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <i class="fa fa-angle-right"></i
@@ -262,7 +277,7 @@
         </div>
 
         <div class="maindivsec2p1 contrvlsol">
-          <img src="./img/Travel_Solutions.jpg" />
+          <img src="./img/Travel_Solutions.jpg" class="imgp1abc" />
           <a href="#" class="hvr-sweep-to-right"
             >Read More &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <i class="fa fa-angle-right"></i
@@ -281,7 +296,7 @@
         </div>
 
         <div class="maindivsec2p1 contrvlpart">
-          <img src="./img/OurPatners.jpg" />
+          <img src="./img/OurPatners.jpg" class="imgp1abc" />
           <a href="#" class="hvr-sweep-to-right"
             >Read More &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <i class="fa fa-angle-right"></i
@@ -314,7 +329,7 @@
       <h2>Connexus Travel Technology</h2>
 
       <div class="" style="position: relative">
-        <img src="./img/Connexus_Travel_Technology.jpg" />
+        <img src="./img/Connexus_Travel_Technology.jpg" class="imgp1abc"/>
         <div class="movingbottomdiv">
           <hr />
           <p>
@@ -344,7 +359,7 @@
       <h2>Travel Solutions</h2>
 
       <div class="" style="position: relative">
-        <img src="./img/Travel_Solutions.jpg" />
+        <img src="./img/Travel_Solutions.jpg" class="imgp1abc" />
         <div class="movingbottomdiv">
           <hr />
           <p>
@@ -375,7 +390,7 @@
       <h2>Our Partners & Affiliates</h2>
 
       <div class="" style="position: relative">
-        <img src="./img/Connexus_Travel_Technology.jpg" />
+        <img src="./img/Connexus_Travel_Technology.jpg" class="imgp1abc"  />
         <div class="movingbottomdiv">
           <hr />
           <p>
@@ -493,24 +508,6 @@
     <script src="js/app.js"></script>
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/popper.min.js"></script>
-
-       <!-- <script>
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > 1) {
-          $("header").addClass("sticky");
-          
-           $(".narcontainer").css("background-color", "#293D7C");
-         
-        } else {
-           $(".narcontainer").css("background-color", "unset");
-
-         
-          $("header").removeClass("sticky");
-        
-        }
-      });
-    </script> -->
-
     <script>
 
       // define all UI variable
@@ -552,16 +549,7 @@
       function navLinkClick() {
         if (navMenu.classList.contains("open")) {
           navToggler.click();
-          //  $(".narcontainer").css("background-color", "#293D7C");
-          // $(".bodyst").css("overflow", "hidden");
-        }
-
-         if ($(".nav-toggler").hasClass("toggler-open")) {
-            alert("yes");
-           $(".narcontainer").css("background-color", "#293D7C");
-          $(".bodyst").css("overflow", "hidden");
-        }
-          
+        } 
       }
 
       
