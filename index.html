@@ -14,17 +14,15 @@
     />
 
     <style>
-    
-      @media(max-width: 950px)
-      {
-        .narcontainer{
+      @media (max-width: 950px) {
+        .narcontainer {
           position: relative;
           width: 100%;
         }
-          .nav-toggler{
-        position: absolute;
-        right: 25px;
-      }
+        .nav-toggler {
+          position: absolute;
+          right: 25px;
+        }
       }
     </style>
   </head>
@@ -107,7 +105,7 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row" style="align-items: center">
           <div class="col-md-6 videob1">
             <div class="hotlines hotitab1">
               <div class="hotlinestop">
@@ -228,16 +226,23 @@
             </div>
           </div>
           <div class="col-md-6">
-            <div class="video-container">
+            <div class="video-container" id="video-container">
               <video
-                class="agency-video"
+                id="video"
+                preload="metadata"
                 poster="./img/Video_Preview.jpg"
               >
                 <source
-                  src="images/backgrounds/M7 MELIE  VO EN SUB FR 2 Finale (avec image ).mp4"
+                  src="//cdn.jsdelivr.net/npm/big-buck-bunny-1080p@0.0.6/video.mp4"
                   type="video/mp4"
                 />
               </video>
+
+              <div class="play-button-wrapper">
+                <div title="Play video" class="play-gif" id="circle-play-b">
+                  <img src="./img/Play_btn.svg" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -329,7 +334,7 @@
       <h2>Connexus Travel Technology</h2>
 
       <div class="" style="position: relative">
-        <img src="./img/Connexus_Travel_Technology.jpg" class="imgp1abc"/>
+        <img src="./img/Connexus_Travel_Technology.jpg" class="imgp1abc" />
         <div class="movingbottomdiv">
           <hr />
           <p>
@@ -390,7 +395,7 @@
       <h2>Our Partners & Affiliates</h2>
 
       <div class="" style="position: relative">
-        <img src="./img/Connexus_Travel_Technology.jpg" class="imgp1abc"  />
+        <img src="./img/Connexus_Travel_Technology.jpg" class="imgp1abc" />
         <div class="movingbottomdiv">
           <hr />
           <p>
@@ -509,7 +514,6 @@
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/popper.min.js"></script>
     <script>
-
       // define all UI variable
       const navToggler = document.querySelector(".nav-toggler");
       const navMenu = document.querySelector(".site-navbar ul");
@@ -532,59 +536,49 @@
       function togglerClick() {
         navToggler.classList.toggle("toggler-open");
         navMenu.classList.toggle("open");
-         if ($(".nav-toggler").hasClass("toggler-open")) {
-           $(".narcontainer").css("background-color", "#293D7C");
-          
+        if ($(".nav-toggler").hasClass("toggler-open")) {
+          $(".narcontainer").css("background-color", "#293D7C");
+
           $(".bodyst").css("overflow", "hidden");
-        }
-        else{
-           $(".narcontainer").css("background-color", "unset");
+        } else {
+          $(".narcontainer").css("background-color", "unset");
           $(".bodyst").css("overflow-y", "scroll");
         }
-      
-        
       }
 
       // navLinkClick function
       function navLinkClick() {
         if (navMenu.classList.contains("open")) {
           navToggler.click();
-        } 
+        }
       }
-
-      
-
-   
-      
-
-     
 
       $(".contrvlsol").css("display", "none");
       $(".contrvlpart").css("display", "none");
-       $(".contrvltechtab").css("color", "#112F64");
+      $(".contrvltechtab").css("color", "#112F64");
       $(".contrvltechtab").click(function () {
         $(".contrvltech").css("display", "block");
         $(".contrvlsol").css("display", "none");
         $(".contrvlpart").css("display", "none");
-         $(".contrvltechtab").css("color", "#112F64");
-           $(".contrvlsoltab").css("color", "#565656");
-             $(".contrvlparttab").css("color", "#565656");
+        $(".contrvltechtab").css("color", "#112F64");
+        $(".contrvlsoltab").css("color", "#565656");
+        $(".contrvlparttab").css("color", "#565656");
       });
       $(".contrvlsoltab").click(function () {
         $(".contrvltech").css("display", "none");
         $(".contrvlsol").css("display", "block");
         $(".contrvlpart").css("display", "none");
-         $(".contrvlsoltab").css("color", "#112F64");
-           $(".contrvltechtab").css("color", "#565656");
-             $(".contrvlparttab").css("color", "#565656");
+        $(".contrvlsoltab").css("color", "#112F64");
+        $(".contrvltechtab").css("color", "#565656");
+        $(".contrvlparttab").css("color", "#565656");
       });
       $(".contrvlparttab").click(function () {
         $(".contrvltech").css("display", "none");
         $(".contrvlsol").css("display", "none");
         $(".contrvlpart").css("display", "block");
-         $(".contrvlparttab").css("color", "#112F64");
-           $(".contrvlsoltab").css("color", "#565656");
-             $(".contrvltechtab").css("color", "#565656");
+        $(".contrvlparttab").css("color", "#112F64");
+        $(".contrvlsoltab").css("color", "#565656");
+        $(".contrvltechtab").css("color", "#565656");
       });
 
       $(".contrvlsolmbl").css("display", "none");
@@ -621,6 +615,29 @@
         $(".hotitab1").css("display", "none");
         $(".hotitab2").css("display", "none");
         $(".hotitab3").css("display", "block");
+      });
+    </script>
+
+    <script>
+      const video = document.getElementById("video");
+      const circlePlayButton = document.getElementById("circle-play-b");
+
+      function togglePlay() {
+        if (video.paused || video.ended) {
+          video.play();
+        } else {
+          video.pause();
+        }
+      }
+
+      circlePlayButton.addEventListener("click", togglePlay);
+      video.addEventListener("playing", function () {
+        circlePlayButton.style.opacity = 0;
+         $("#video").attr('controls', true);
+      });
+      video.addEventListener("pause", function () {
+        circlePlayButton.style.opacity = 1;
+         $("#video").attr('controls', false);
       });
     </script>
   </body>
