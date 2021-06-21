@@ -68,10 +68,9 @@
 
       <div class="headertxt">
         <img src="./img/Header_Dot_147x135.svg" />
-        <h2 class="disnonheaderbgdesk">
+        <h2 class="">
           Your One-Stop Corporate Travel Solutions
         </h2>
-        <h2 class="disnonheaderbgmbl">Become a corporate client</h2>
       </div>
       <div class="headerbottom disnonheaderbgmbl">
         <a href="#introsection">
@@ -188,7 +187,7 @@
                   <h2>Hotnews</h2>
                 </div>
                 <div class="siderigfhthl">
-                  <a class="hoticlicktab2"><img src="./img/pre_btn.svg" /></a>
+                  <a class="hoticlicktab2" ><img src="./img/pre_btn.svg" /></a>
                   <h2 class="disheading1">Airfare</h2>
                   <a class="hoticlicktab1"><img src="./img/next_btn.svg" /></a>
                 </div>
@@ -252,18 +251,18 @@
     <section class="sect2p1 moving1disdesk">
       <div class="container" style="position: relative">
         <div class="movingbox1">
-          <a class="contrvltechtab"
+          <a class="contrvltechtab contabde"
             >01 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Connexus Travel Technology
           </a>
-          <a class="contrvlsoltab"
+          <a class="contrvlsoltab contabde"
             >02 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Travel Solutions</a
           >
-          <a class="contrvlparttab"
+          <a class="contrvlparttab contabde" 
             >03 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Our Partners & Affiliates
           </a>
         </div>
 
-        <div class="maindivsec2p1 contrvltech">
+        <div class="maindivsec2p1 contrvltech ">
           <img src="./img/Connexus_Travel_Technology.jpg" class="imgp1abc" />
           <a href="#" class="hvr-sweep-to-right"
             >Read More &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -281,7 +280,7 @@
           </div>
         </div>
 
-        <div class="maindivsec2p1 contrvlsol">
+        <div class="maindivsec2p1 contrvlsol ">
           <img src="./img/Travel_Solutions.jpg" class="imgp1abc" />
           <a href="#" class="hvr-sweep-to-right"
             >Read More &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -300,7 +299,7 @@
           </div>
         </div>
 
-        <div class="maindivsec2p1 contrvlpart">
+        <div class="maindivsec2p1 contrvlpart ">
           <img src="./img/OurPatners.jpg" class="imgp1abc" />
           <a href="#" class="hvr-sweep-to-right"
             >Read More &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -513,7 +512,8 @@
     <script src="js/app.js"></script>
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/popper.min.js"></script>
-    <script>
+    <script >
+      $(document).ready(function(){ 
       // define all UI variable
       const navToggler = document.querySelector(".nav-toggler");
       const navMenu = document.querySelector(".site-navbar ul");
@@ -553,8 +553,8 @@
         }
       }
 
-      $(".contrvlsol").css("display", "none");
-      $(".contrvlpart").css("display", "none");
+  
+   
       $(".contrvltechtab").css("color", "#112F64");
       $(".contrvltechtab").click(function () {
         $(".contrvltech").css("display", "block");
@@ -581,8 +581,7 @@
         $(".contrvltechtab").css("color", "#565656");
       });
 
-      $(".contrvlsolmbl").css("display", "none");
-      $(".contrvlpartmbl").css("display", "none");
+     
       $(".tab01mbl1").click(function () {
         $(".contrvltechmbl").css("display", "block");
         $(".contrvlsolmbl").css("display", "none");
@@ -599,24 +598,79 @@
         $(".contrvlpartmbl").css("display", "block");
       });
 
-      $(".hotitab2").css("display", "none");
-      $(".hotitab3").css("display", "none");
+    
       $(".hoticlicktab1").click(function () {
+       
         $(".hotitab1").css("display", "block");
         $(".hotitab2").css("display", "none");
         $(".hotitab3").css("display", "none");
       });
       $(".hoticlicktab2").click(function () {
+         
         $(".hotitab1").css("display", "none");
         $(".hotitab2").css("display", "block");
         $(".hotitab3").css("display", "none");
       });
       $(".hoticlicktab3").click(function () {
+         
         $(".hotitab1").css("display", "none");
         $(".hotitab2").css("display", "none");
         $(".hotitab3").css("display", "block");
       });
+
+     
+
+     });
+
     </script>
+
+ <script>
+   if (document.documentElement.clientWidth > 950) {
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("maindivsec2p1");
+   var dots = document.getElementsByClassName("contabde");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}   
+  for (i = 0; i < dots.length; i++) {
+    // dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].style.color = "#565656";
+  } 
+ 
+  slides[slideIndex-1].style.display = "block";  
+   dots[slideIndex-1].style.color = " #112F64";
+
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+
+   }
+
+//mobile
+if (document.documentElement.clientWidth < 950) {
+var slideIndexmbl = 0;
+showSlidesmbl();
+
+function showSlidesmbl() {
+  var i;
+  var slidesmbl = document.getElementsByClassName("moving1deskmbl");
+  for (i = 0; i < slidesmbl.length; i++) {
+    slidesmbl[i].style.display = "none";  
+  }
+  slideIndexmbl++;
+  if (slideIndexmbl > slidesmbl.length) {slideIndexmbl = 1}   
+ 
+  slidesmbl[slideIndexmbl-1].style.display = "block";  
+
+  setTimeout(showSlidesmbl, 3000); // Change image every 2 seconds
+}
+}
+</script>
 
     <script>
       const video = document.getElementById("video");

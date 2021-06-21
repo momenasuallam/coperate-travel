@@ -714,7 +714,7 @@ header {
   .headertxt {
     flex-direction: column;
     align-items: baseline;
-    padding: 35vh 2rem;
+    padding: 28vh 2rem;
   }
   .headertxt img {
     width: 70px;
@@ -728,7 +728,7 @@ header {
   }
   .headerbottom {
     position: absolute;
-    bottom: 15px;
+    bottom: 0px;
     width: 100%;
   }
   .headerbottom a {
@@ -1849,4 +1849,26 @@ margin: 1rem 0;
   .part1head {
     padding: 1rem 1.5rem 2rem;
   }
+}
+
+/* .contrvlsol{
+  display: none;
+}
+.contrvlpart{
+  display: none;
+} */
+.contrvlsolmbl{
+  display: none;
+}
+.contrvlpartmbl{
+  display: none;
+}
+.hotitab2{
+  display: none;
+}
+.hotitab3{
+  display: none;
+}
+.activeme{
+  display: block;
 }
