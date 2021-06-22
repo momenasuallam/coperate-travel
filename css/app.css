@@ -594,6 +594,8 @@ header {
   text-align: center;
   align-items: center;
   padding: 3rem 0px;
+  top: 50%;
+    transform: translateY(-50%);
 }
 .leranmotxt h2 {
   letter-spacing: 1.8px;
@@ -799,6 +801,7 @@ header {
     text-align: center;
     align-items: center;
     padding: 3rem 0px 1rem;
+    transform: translateY(0%);
   }
   .submitbtn {
     float: none;
@@ -887,6 +890,7 @@ header {
   .moving1deskmbl {
     display: block;
     padding: 1rem 0 7rem;
+    margin-bottom: 7rem;
   }
   .topmovingdiv {
     display: flex;
@@ -933,7 +937,7 @@ header {
     background: #ffffff 0% 0% no-repeat padding-box;
     box-shadow: 0px 18px 16px #314b8933;
     position: absolute;
-    bottom: -67px;
+    top: 50px;
     width: 80%;
     right: 0px;
     padding: 1.5rem;
@@ -1183,7 +1187,7 @@ button:focus {
   font-family: "barlow-bold";
   font-size: 1.5vw;
   text-transform: capitalize;
-  padding: 0px 30px 0px 20px;
+  padding: 12px 30px 0px 20px;
 }
 .texttech p {
   color: #000;
@@ -1196,6 +1200,7 @@ button:focus {
   height: 1px;
   width: 2.5vw;
   margin: 0px 30px 14px 20px;
+  position: absolute;
 }
 .hraft {
   background-color: #202b5c;
@@ -1343,6 +1348,7 @@ button:focus {
   height: 1px;
   width: 2.5vw;
   margin: 0 0 15px;
+  position: absolute;
 }
 .trsolboxtxt h2 {
   font-family: "barlow-bold";
@@ -1350,6 +1356,7 @@ button:focus {
   text-transform: uppercase;
   color: #202b5c;
   margin-bottom: 1rem;
+  margin-top: 20px;
 }
 .trsolboxtxt p {
   font-family: "barlow-med";
@@ -1799,24 +1806,34 @@ margin: 1rem 0;
 }
 
 .part1logos {
-  display: grid;
-  padding: 0rem 3.5rem 0rem;
+   /* display:grid;
   grid-gap: 30px;
   grid-template-columns: repeat(5, 1fr);
   place-items: center;
-  grid-template-rows: auto auto 1fr 1fr 1fr auto auto;
+  grid-template-rows: auto auto 1fr 1fr 1fr auto auto; */
+    padding: 0rem 1.5rem 0rem;
+  display: flex;
+  display: -ms-flexbox;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    align-items: center;
 }
 .part1logos img {
-  width: 100%;
+ flex: 0 20%;
+ -ms-flex: 0 18%;
+  padding: 10px;
+  width: 200px;
 }
 .part2logos {
-  grid-template-rows: 1fr 1fr 1fr !important;
+  /* grid-template-rows: 1fr 1fr 1fr !important; */
+   padding: 2rem 3.5rem !important;
 }
 .parthotellogos {
-  grid-template-rows: 1fr 1fr 1fr !important;
+  /* grid-template-rows: 1fr 1fr 1fr !important; */
+   padding: 2rem 3.5rem !important;
 }
 .part3logos {
-  grid-template-rows: 1fr 1fr !important;
+  /* grid-template-rows: 1fr 1fr !important; */
   padding: 2rem 3.5rem !important;
 }
 
@@ -1830,19 +1847,28 @@ margin: 1rem 0;
     padding: 1rem 1rem;
   }
   .part1logos {
-    grid-gap: 20px;
+    /* grid-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     padding: 0rem 35px 1rem;
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr); */
+    padding: 0px 1rem 0px !important;
+  }
+  .part1logos img {
+    flex: 0 33%;
+    -ms-flex: 0 28%;
+    width: 100px;
   }
   .part2logos {
-    grid-template-rows: repeat(5, 1fr) !important;
+    /* grid-template-rows: repeat(5, 1fr) !important; */
+    padding: 1rem 1rem;
   }
   .parthotellogos {
-    grid-template-rows: repeat(4, 1fr) !important;
+    /* grid-template-rows: repeat(4, 1fr) !important; */
+     padding: 1rem 1rem;
   }
   .part3logos {
-    grid-template-rows: repeat(2, 1fr) !important;
+    /* grid-template-rows: repeat(2, 1fr) !important; */
+     padding: 1rem 1rem;
   }
   .wantlearnmorebg {
     padding: 4rem 2rem;
@@ -1872,4 +1898,17 @@ margin: 1rem 0;
 }
 .activeme{
   display: block;
+}
+
+.reshow1{
+  display: none;
+}
+.reshow2{
+  display: none;
+}
+.reshow3{
+  display: none;
+}
+.reshow4 {
+  display: none;
 }
