@@ -1513,10 +1513,10 @@ margin: 1rem 0;
 
 @media(min-width:950px)
 {
-  .reshow2{
+  #reshow2{
     left: 4%;
   }
-   .reshow4{
+   #reshow4{
     left: 4%;
   }
 }
@@ -1890,25 +1890,25 @@ margin: 1rem 0;
 .contrvlpartmbl{
   display: none;
 }
-.hotitab2{
+#hotitab2{
   display: none;
 }
-.hotitab3{
+#hotitab3{
   display: none;
 }
 .activeme{
   display: block;
 }
 
-.reshow1{
+#reshow1{
   display: none;
 }
-.reshow2{
+#reshow2{
   display: none;
 }
-.reshow3{
+#reshow3{
   display: none;
 }
-.reshow4 {
+#reshow4 {
   display: none;
 }

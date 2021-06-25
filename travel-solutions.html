@@ -17,6 +17,30 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
+    <script>
+      
+       function getmoredetbtn1()
+      {
+        document.getElementById('reshow1').style.display = "block";
+      }
+
+          function getmoredetbtn2()
+      {
+        document.getElementById('reshow2').style.display = "block";
+      }
+
+          function getmoredetbtn3()
+      {
+        document.getElementById('reshow3').style.display = "block";
+      }
+
+          function getmoredetbtn4()
+      {
+        document.getElementById('reshow4').style.display = "block";
+      }
+
+      </script>
     <style>
       .site-navbar ul li a {
         color: #112f64;
@@ -146,14 +170,14 @@ header{
             • New Distribution Capability (NDC) / Direct Connectivity
            </p>
 
-                  <a id="getmoredetbtn1" class="hvr-sweep-to-right">
+                  <a id="getmoredetbtn1" onclick="getmoredetbtn1();" class="hvr-sweep-to-right">
                     Get more details &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <i class="fa fa-angle-right"></i>
                   </a>
            
          </div>
 
-         <div class="trsolmoredet reshow1">
+         <div class="trsolmoredet " id="reshow1">
            <hr>
            <form>
              <div class="boxf">
@@ -215,13 +239,13 @@ header{
              <br>
         Reduce your exposure to potential risk with our pre-trip approval platform. Identify travel risks before you make your booking and receive SMS and email alerts as potential risks unfold.    </p>
 
-                  <a id="getmoredetbtn2" class="hvr-sweep-to-right btnleftbox">
+                  <a id="getmoredetbtn2" onclick="getmoredetbtn2();" class="hvr-sweep-to-right btnleftbox">
                     Get more details &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <i class="fa fa-angle-right"></i>
                   </a>
            
          </div>
-          <div class="trsolmoredet reshow2">
+          <div class="trsolmoredet " id="reshow2">
              <hr>
            <form>
              <div class="boxf">
@@ -286,13 +310,13 @@ header{
               CTL Mobility Solution – A Convenient Way for Trip Management on the Move  
           </p>
 
-                  <a id="getmoredetbtn3" class="hvr-sweep-to-right">
+                  <a id="getmoredetbtn3" onclick="getmoredetbtn3();" class="hvr-sweep-to-right">
                     Get more details &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <i class="fa fa-angle-right"></i>
                   </a>
            
          </div>
-          <div class="trsolmoredet reshow3">
+          <div class="trsolmoredet" id="reshow3">
              <hr>
            <form>
              <div class="boxf">
@@ -353,14 +377,14 @@ header{
             <br>
        • 24/7 support for your travelers every day of the year
        </p>          
-       <a id="getmoredetbtn4" class="hvr-sweep-to-right btnleftbox">
+       <a id="getmoredetbtn4" onclick="getmoredetbtn4();" class="hvr-sweep-to-right btnleftbox">
                     Get more details &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <i class="fa fa-angle-right"></i>
                   </a>
            
          </div>
 
-          <div class="trsolmoredet reshow4">
+          <div class="trsolmoredet" id="reshow4">
              <hr>
            <form>
              <div class="boxf">
@@ -512,27 +536,18 @@ header{
 
     
 
-         $("#getmoredetbtn1").click(function () {
-        $(".reshow1").css("display", "block");
-      });
+     
          $("#getmosubbtn1").click(function () {
         $(".reshow1").css("display", "none");
-      });
-         $("#getmoredetbtn2").click(function () {
-        $(".reshow2").css("display", "block");
       });
          $("#getmosubbtn2").click(function () {
         $(".reshow2").css("display", "none");
       });
-         $("#getmoredetbtn3").click(function () {
-        $(".reshow3").css("display", "block");
-      });
+       
          $("#getmosubbtn3").click(function () {
         $(".reshow3").css("display", "none");
       });
-         $("#getmoredetbtn4").click(function () {
-        $(".reshow4").css("display", "block");
-      });
+    
          $("#getmosubbtn4").click(function () {
         $(".reshow4").css("display", "none");
       });

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
      <meta http-equiv="cache-control" content="max-age=0" />
     <meta http-equiv="cache-control" content="no-cache" />
     <meta http-equiv="expires" content="0" />
@@ -30,6 +31,28 @@
         }
       }
     </style>
+    <script>
+      function hoticlicktab1()
+      {
+        document.getElementById('hotitab1').style.display = "block";
+        document.getElementById('hotitab2').style.display = "none";
+        document.getElementById('hotitab3').style.display = "none";
+      }
+       function hoticlicktab2()
+      {
+        document.getElementById('hotitab1').style.display = "none";
+        document.getElementById('hotitab2').style.display = "block";
+        document.getElementById('hotitab3').style.display = "none";
+      }
+       function hoticlicktab3()
+      {
+        document.getElementById('hotitab1').style.display = "none";
+        document.getElementById('hotitab2').style.display = "none";
+        document.getElementById('hotitab3').style.display = "block";
+      }
+
+
+    </script>
   </head>
   <body class="bodyst">
     <header>
@@ -111,15 +134,15 @@
         </div>
         <div class="row" style="align-items: center">
           <div class="col-md-6 videob1">
-            <div class="hotlines hotitab1">
+            <div class="hotlines" id="hotitab1">
               <div class="hotlinestop">
                 <div>
                   <h2>Hotnews</h2>
                 </div>
                 <div class="siderigfhthl">
-                  <a class="hoticlicktab3"><img src="./img/pre_btn.svg" /></a>
+                  <a class="hoticlicktab3" onclick="hoticlicktab3();"><img src="./img/pre_btn.svg" /></a>
                   <h2 class="disheading1">Package</h2>
-                  <a class="hoticlicktab2"><img src="./img/next_btn.svg" /></a>
+                  <a class="hoticlicktab2" onclick="hoticlicktab2();"><img src="./img/next_btn.svg" /></a>
                 </div>
               </div>
 
@@ -144,15 +167,15 @@
                 ></a>
               </div>
             </div>
-            <div class="hotlines hotitab2">
+            <div class="hotlines " id="hotitab2">
               <div class="hotlinestop">
                 <div>
                   <h2>Hotnews</h2>
                 </div>
                 <div class="siderigfhthl">
-                  <a class="hoticlicktab1"><img src="./img/pre_btn.svg" /></a>
+                  <a class="hoticlicktab1" onclick="hoticlicktab1();"><img src="./img/pre_btn.svg" /></a>
                   <h2 class="disheading1">Others</h2>
-                  <a class="hoticlicktab3"><img src="./img/next_btn.svg" /></a>
+                  <a class="hoticlicktab3" onclick="hoticlicktab3();"><img src="./img/next_btn.svg" /></a>
                 </div>
               </div>
 
@@ -186,15 +209,15 @@
                 ></a>
               </div>
             </div>
-            <div class="hotlines hotitab3">
+            <div class="hotlines " id="hotitab3">
               <div class="hotlinestop">
                 <div>
                   <h2>Hotnews</h2>
                 </div>
                 <div class="siderigfhthl">
-                  <a class="hoticlicktab2" ><img src="./img/pre_btn.svg" /></a>
+                  <a class="hoticlicktab2" onclick="hoticlicktab2();"><img src="./img/pre_btn.svg" /></a>
                   <h2 class="disheading1">Airfare</h2>
-                  <a class="hoticlicktab1"><img src="./img/next_btn.svg" /></a>
+                  <a class="hoticlicktab1" onclick="hoticlicktab1();"><img src="./img/next_btn.svg" /></a>
                 </div>
               </div>
 
@@ -604,24 +627,24 @@
       });
 
     
-      $(".hoticlicktab1").click(function () {
+      // $(".hoticlicktab1").click(function () {
        
-        $(".hotitab1").css("display", "block");
-        $(".hotitab2").css("display", "none");
-        $(".hotitab3").css("display", "none");
-      });
-      $(".hoticlicktab2").click(function () {
+      //   $(".hotitab1").css("display", "block");
+      //   $(".hotitab2").css("display", "none");
+      //   $(".hotitab3").css("display", "none");
+      // });
+      // $(".hoticlicktab2").click(function () {
          
-        $(".hotitab1").css("display", "none");
-        $(".hotitab2").css("display", "block");
-        $(".hotitab3").css("display", "none");
-      });
-      $(".hoticlicktab3").click(function () {
+      //   $(".hotitab1").css("display", "none");
+      //   $(".hotitab2").css("display", "block");
+      //   $(".hotitab3").css("display", "none");
+      // });
+      // $(".hoticlicktab3").click(function () {
          
-        $(".hotitab1").css("display", "none");
-        $(".hotitab2").css("display", "none");
-        $(".hotitab3").css("display", "block");
-      });
+      //   $(".hotitab1").css("display", "none");
+      //   $(".hotitab2").css("display", "none");
+      //   $(".hotitab3").css("display", "block");
+      // });
 
      
 
